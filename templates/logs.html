@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Call Logs</title>
+</head>
+<body>
+
+<h2>Call Logs</h2>
+
+<table border="1">
+    <tr>
+        <th>User</th>
+        <th>AI Reply</th>
+        <th>Time</th>
+    </tr>
+
+    {% for log in logs %}
+    <tr>
+        <td>{{ log[0] }}</td>
+        <td>{{ log[1] }}</td>
+        <td>{{ log[2] }}</td>
+    </tr>
+    {% endfor %}
+</table>
+
+<a href="/">Back</a>
+
+</body>
+</html>
